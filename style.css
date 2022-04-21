@@ -2,7 +2,7 @@
   height: 48px;
   background: #3c3a39;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 24px;
   margin-top: 0;
@@ -38,6 +38,22 @@
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   margin-bottom: -55px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+}
+
+.navbar img {
+  float: right;
 }
 
 .logo-message {
