@@ -474,7 +474,7 @@ form input {
 form textarea {
   border: none;
   background-color: #fbf8f7;
-  padding-left: 15px;
+  padding-left: 10px;
   height: 114px;
   width: 327px;
 }
@@ -776,6 +776,10 @@ form textarea {
 
   .footer form {
     width: 500px;
+  }
+
+  .footer textarea {
+    background-color: red;
   }
 
   .form-button {
