@@ -15,7 +15,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   margin-right: 0;
-  list-style: none
+  list-style: none;
 }
 
 .container {
@@ -452,13 +452,21 @@ textarea {
   border-radius: 4px;
 }
 
-/* .sociallist {
+<<<<<<< Updated upstream
+ .sociallist {
+=======
+.sociallist {
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 5px;
   justify-content: center;
-} */
+<<<<<<< Updated upstream
+} 
+=======
+}
+>>>>>>> Stashed changes
 
 .shape {
   padding-top: 8px;
