@@ -441,7 +441,7 @@ input {
   border-radius: 4px;
 }
 
-textarea {
+/* textarea {
   width: 90%;
   padding: 60px;
   padding-top: 22px;
@@ -450,15 +450,15 @@ textarea {
   border: 2px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
-}
+} */
 
-.sociallist {
+/* .sociallist {
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 5px;
   justify-content: center;
-}
+} */
 
 .shape {
   padding-top: 8px;
