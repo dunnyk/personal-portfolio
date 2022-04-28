@@ -4,38 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>mobile version</title>
   </head>
 
   <body>
-    <header class="top-head">
-      <div class="navbar">
-        <a class="navbar-container">Arrow Dan</a>
-        <a href="#">
-          <img
-            class="hamburger hide-desktop"
-            src="image/Union.png"
-            alt="navigation icon"
-          />
-        </a>
-      </div>
+    <header class="header">
+      <a class="container" href="index.html">Arrow Dan</a>
+      <nav class="navbar">
+        <img
+          class="hamburger hide-desktop"
+          src="image/Union.png"
+          alt="navigation icon"
+        />
+        <ul class="hide-mobile">
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="main-container container">
-      <h1 class="logo-message">Hey There, I'm Dan</h1>
+      <h1 class="logo-message">Hey there, I'm Dan</h1>
       <h3 class="dev-intro">I'am a Software Developer</h3>
       <p class="background">
         I can help you build a product , feature or website Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, do not hestiate to contact me.
       </p>
+
       <ul class="social-media container">
         <li>
           <a href="https://github.com/dunnyk"
@@ -77,6 +81,7 @@
         <div class="main-article">
           <div class="article-img">
             <img class="hide-desktop" src="image/Tonic.png" alt="Tonic Image" />
+            <img class="hide-mobile" src="image/tonic-desktop.png" alt="big tonic image" />
           </div>
           <div class="article-text">
             <div class="multi-post">
@@ -243,5 +248,75 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+
+        <form action="https://formspree.io/f/mayvddjz" method="post">
+          <input
+            type="text"
+            placeholder="Full name"
+            name="Full name"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email address"
+            name="email"
+            required
+          />
+          <textarea
+            cols="30"
+            class="textarea"
+            rows="10"
+            placeholder="Enter text here"
+            maxlength="500"
+            required
+            name="Message"
+          ></textarea>
+          <button class="form-button" type="submit">Get in touch</button>
+        </form>
+      </div>
+      <img
+        class="hide-desktop"
+        src="./image/footerIcon2/Rectangle42.png"
+        alt="Rectangle 42"
+      />
+      <div class="footer-line hide-mobile"></div>
+
+      <ul class="sociallist">
+        <li>
+          <img src="./image/footerIcon2/Icon-GitHub.png" alt="Github icon" />
+        </li>
+        <li>
+          <img
+            src="./image/footerIcon2/Icon-Linkedin.png"
+            alt="Linkedin Icon"
+          />
+        </li>
+        <li>
+          <img
+            src="./image/footerIcon2/Icon-Angelist.png"
+            alt="Angelist Icon"
+          />
+        </li>
+        <li>
+          <img src="./image/footerIcon2/Icon-Twitter.png" alt="Twitter Icon" />
+        </li>
+        <li>
+          <img src="./image/footerIcon2/Icon-Medium.png" alt="Medium Icon" />
+        </li>
+      </ul>
+      <img
+        class="shape hide-desktop"
+        src="./image/footerIcon2/Shape.png"
+        alt="Shape Icon"
+      />
+    </footer>
   </body>
 </html>
