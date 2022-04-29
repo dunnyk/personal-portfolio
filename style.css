@@ -503,6 +503,10 @@ form textarea {
   display: inline;
 }
 
+#envelop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -545,12 +549,20 @@ form textarea {
     display: none;
   }
 
-  .hide-mobile img {
+  .navbar img {
+    padding-right: 20px;
+    right: 10px;
+    position: absolute;
+    top: 41px;
+    display: none;
+  }
+
+  /* .hide-mobile img {
     display: inline;
     position: relative;
     margin-right: 30px;
     height: 17px;
-  }
+  } */
 
   .hide-mobile {
     display: inline;
