@@ -2,6 +2,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .social-media img {
@@ -505,6 +506,7 @@ form textarea {
 @media (min-width: 768px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 
   form textarea {
@@ -583,7 +585,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     list-style: none;
-    left: -60px;
+    left: -120px;
     top: 300px;
   }
 
@@ -658,6 +660,8 @@ form textarea {
     grid-template-rows: 435px 435px;
     gap: 48px;
     margin-top: 48px;
+    margin-right: 15px;
+    margin-left: 20px;
   }
 
   .card-section {
@@ -676,13 +680,10 @@ form textarea {
     background-color: #ff6b00;
     font-size: 14px;
     transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
+    transition-duration: 3s;
+    transition-delay: 1s;
   }
 
-  .btn1:hover {
-    font-size: 36px;
-  }
 
   .grid-container h2 {
     font-family: "Crete Round", serif;
@@ -844,7 +845,5 @@ form textarea {
     height: 114px;
   }
 
-  .footer-line {
-    border-bottom: 1px solid #dfe1e6;
-  }
+
 }
