@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 24px;
+  padding-bottom: 35px;
   margin-top: 0;
 }
 
@@ -507,10 +507,33 @@ form textarea {
   display: none;
 }
 
+.navbar {
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+
+
+.navbar > img {
+  padding-right: 20px;
+  right: 10px;
+  position: absolute;
+  top: 41px;
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .navbar > img {
+    padding-right: 20px;
+    right: 10px;
+    position: absolute;
+    top: 41px;
+    display: inline;
   }
 
   form textarea {
@@ -549,20 +572,6 @@ form textarea {
     display: none;
   }
 
-  .navbar img {
-    padding-right: 20px;
-    right: 10px;
-    position: absolute;
-    top: 41px;
-    display: none;
-  }
-
-  /* .hide-mobile img {
-    display: inline;
-    position: relative;
-    margin-right: 30px;
-    height: 17px;
-  } */
 
   .hide-mobile {
     display: inline;
@@ -597,6 +606,7 @@ form textarea {
 
   .container {
     padding: 0 142px;
+    margin: -15px;
   }
 
   .social-media {
