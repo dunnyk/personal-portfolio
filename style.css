@@ -708,6 +708,7 @@ form textarea {
     transition-property: font-size;
     transition-duration: 3s;
     transition-delay: 1s;
+    transform: translate(10px, 10px);
   }
 
   .grid-container h2 {
@@ -870,4 +871,37 @@ form textarea {
     width: 684px;
     height: 114px;
   }
+
+  .footer-line {
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-container {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .navbar img {
+    float: right;
+    margin: 10px;
+  }
+<<<<<<< HEAD
+=======
+
+  .btn1 {
+    transform: translate(10px, 10px);
+    background-color: red;
+  }
+
+>>>>>>> 4b55bd3c0bcb4087f0e2e733f8f1ec29b3e100dd
 }
