@@ -17,6 +17,10 @@ To spin up your application, follow this  simple steps and you will be good to g
 - Head to the repository folder in your terminal`cd micro-portifolio`.
 - Run `npm install` to install the dev dependencies for linters.
 
+## Live Preview
+
+(My Portfolio)[https://dunnyk.github.io/personal-portfolio/]
+
 ## Authors
 
 👤 **Arrow Dan**

@@ -895,4 +895,13 @@ form textarea {
     float: right;
     margin: 10px;
   }
+<<<<<<< HEAD
+=======
+
+  .btn1 {
+    transform: translate(10px, 10px);
+    background-color: red;
+  }
+
+>>>>>>> 4b55bd3c0bcb4087f0e2e733f8f1ec29b3e100dd
 }
