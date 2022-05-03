@@ -2,6 +2,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .social-media img {
@@ -15,7 +16,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   margin-right: 0;
-  list-style: none
+  list-style: none;
 }
 
 .container {
@@ -23,14 +24,25 @@ body {
   padding-right: 24px;
 }
 
-.top-head {
+.header {
   height: 48px;
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 24px;
+  padding-bottom: 35px;
   margin-top: 0;
+}
+
+.header a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  padding-top: 58px;
 }
 
 .hamburger {
@@ -107,6 +119,8 @@ body {
   color: #1c1a19;
   padding-top: 120px;
   padding-top: 0;
+
+  /* text-align: center; */
 }
 
 .line {
@@ -134,6 +148,8 @@ body {
 .multi-post {
   height: 147px;
   line-height: 24px;
+
+  /* width: 375px; */
 }
 
 .multi-post h3 {
@@ -161,16 +177,6 @@ footer p {
 .multi-post p {
   color: #091e42;
   padding-right: 24px;
-}
-
-.work-languages {
-  display: flex;
-  column-gap: 0.8rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.03em;
-  color: var(--color-primary);
 }
 
 ul.work-list {
@@ -230,6 +236,16 @@ ul.work-list {
 .btn:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+.work-languages {
+  display: flex;
+  column-gap: 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
 }
 
 .work-languages li {
@@ -487,9 +503,67 @@ form textarea {
   display: inline;
 }
 
+#envelop {
+  display: none;
+}
+
+.navbar {
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+.navbar > img {
+  padding-right: 20px;
+  right: 10px;
+  position: absolute;
+  top: 41px;
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar > img {
+    padding-right: 20px;
+    right: 10px;
+    position: absolute;
+    top: 41px;
+    display: inline;
+  }
+
+  form textarea {
+    border: none;
+    background-color: #fbf8f7;
+    padding-left: 45px;
+    height: 114px;
+    width: 327px;
+  }
+
+  .btn {
+    width: 161px;
+    height: 48px;
+    padding: 12px;
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    line-height: 24px;
+    position: relative;
+    bottom: -130px;
+  }
+
+  .work-languages li {
+    display: inline;
+    border: 1px solid #091e42;
+    color: #091e42;
+    padding: 9px;
+    gap: 2px;
+    font-size: 15px;
+    position: relative;
+    bottom: -140px;
   }
 
   .hide-desktop {
@@ -505,6 +579,7 @@ form textarea {
     display: flex;
     padding: 0;
     margin-top: 70px;
+    margin-right: 50px;
   }
 
   .header li {
@@ -528,6 +603,7 @@ form textarea {
 
   .container {
     padding: 0 142px;
+    margin: -15px;
   }
 
   .social-media {
@@ -536,7 +612,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     list-style: none;
-    left: -60px;
+    left: -120px;
     top: 300px;
   }
 
@@ -607,10 +683,11 @@ form textarea {
 
   .grid-container {
     grid-template-columns: 370px 370px 370px;
-    margin-left: 141.5px;
     grid-template-rows: 435px 435px;
     gap: 48px;
     margin-top: 48px;
+    margin-right: 15px;
+    margin-left: 20px;
   }
 
   .card-section {
@@ -626,8 +703,12 @@ form textarea {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     line-height: 24px;
-    font-size: 16px;
     background-color: #ff6b00;
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transform: translate(10px, 10px);
   }
 
   .grid-container h2 {
@@ -682,6 +763,7 @@ form textarea {
     font-weight: 400;
     line-height: 88px;
     width: 40%;
+    margin-bottom: 10px;
   }
 
   .background {
@@ -813,7 +895,4 @@ form textarea {
     float: right;
     margin: 10px;
   }
-
-
-
 }
