@@ -26,20 +26,37 @@ function displayMenu() {
 
   const hamburgerBtn = document.querySelector('.hamburger');
   const navLinksWrapper = document.querySelector('.hide-mobile');
+  const cross = insertElement('img', 'cross');
+  const li = insertElement('li', 'cross-icon-wrapper');
+
+  function onClickDisappear() {
+    navLinksWrapper.style.display = 'none';
+    li.remove();
+    cross.remove();
+  }
 
   hamburgerBtn.addEventListener('click', () => {
-    const cross = insertElement('img', 'cross');
     cross.src = './image/cross.png';
-    const li = insertElement('li', 'cross-icon-wrapper');
     li.appendChild(cross);
-
     cross.addEventListener('click', () => {
-      navLinksWrapper.style.display = 'none';
-      li.remove();
-      cross.remove();
+      onClickDisappear();
     });
     navLinksWrapper.appendChild(li);
     navLinksWrapper.style.display = 'flex';
+  });
+
+  const portfolioNav = document.querySelector('#portfolio');
+  portfolioNav.addEventListener('click', (e) => {
+    onClickDisappear();
+    e.stopPropagation();
+  });
+
+  document.querySelector('#about').addEventListener('click', () => {
+    onClickDisappear();
+  });
+
+  document.querySelector('#contact').addEventListener('click', () => {
+    onClickDisappear();
   });
 }
 

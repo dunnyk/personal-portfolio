@@ -518,7 +518,7 @@ form textarea {
   right: 10px;
   position: absolute;
   top: 41px;
-  display: none;
+  display: none;  
 }
 
 @media screen and (max-width: 768px) {
