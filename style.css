@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
 }
 
 .social-media img {
@@ -518,6 +519,44 @@ form textarea {
   position: absolute;
   top: 41px;
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #3c3a39;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    border: 1px solid green;
+    padding: 60px 40px 40px 24px;
+    margin: 0;
+    z-index: 100;
+  }
+
+  .hide-mobile .nav-links {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    font-size: 32px;
+    width: 327px;
+    padding-left: 10px;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .cross-icon-wrapper {
+    position: absolute;
+    top: 35px;
+    left: 76%;
+    list-style: none;
+  }
 }
 
 @media (min-width: 768px) {

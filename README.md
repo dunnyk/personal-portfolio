@@ -6,7 +6,8 @@
 
 ## Built With
 - HTML
-- CSS.
+- CSS
+- Github
 
 ## Getting Started
 To spin up your application, follow this  simple steps and you will be good to go.
@@ -28,7 +29,14 @@ To spin up your application, follow this  simple steps and you will be good to g
 - Twitter: [@dankama231](https://twitter.com/dankama231)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-njoroge-8091b3128/)
 
+## Authors 2
+👤 **Robertson Arthur**
+- GitHub: [@bobb-Rob](https://github.com/bobb-Rob)
+- Twitter: [@___robertson](https://twitter.com/___robertson)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/robertson-arthur-6895a0123/)
+
 ## 🤝 Contributing
+
 All issues, contributions and comments are invited.
 
 ## Show your support

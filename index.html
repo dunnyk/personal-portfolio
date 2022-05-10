@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cc9d26c8d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/on-event.js" defer></script>
     <title>mobile version</title>
   </head>
 
@@ -18,16 +23,22 @@
     <header class="header">
       <a class="container" href="index.html">Arrow Dan</a>
       <nav class="navbar">
-        <a href="#"
-          ><img
+        <div>
+          <img
             class="hamburger hide-desktop"
             src="image/Union.png"
             alt="navigation icon"
-        /></a>
+          />
+        </div>
+
         <ul class="hide-mobile">
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li class="nav-links" id="portfolio">
+            <a href="#Work-section">Portfolio</a>
+          </li>
+          <li class="nav-links" id="about"><a href="#about-me">About</a></li>
+          <li class="nav-links" id="contact">
+            <a href="#contact-section">Contact</a>
+          </li>
         </ul>
         <img src="image/envelop.png" alt="header corner envelop" />
       </nav>
@@ -73,7 +84,7 @@
 
     <!-- WORK SECTION -->
 
-    <section class="main-wrap">
+    <section class="main-wrap" id="Work-section">
       <article class="work-section">
         <div class="work-title">
           <h2>My Recent Works</h2>
@@ -107,9 +118,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">
-              See Project
-              </button>
+            <button type="button" class="btn">See Project</button>
           </div>
         </div>
       </article>
@@ -203,7 +212,7 @@
       </section>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="about-me-content">
         <h2 class="logo-message">About me</h2>
         <p class="background">
@@ -258,10 +267,10 @@
       </div>
     </section>
 
-<!-- Footer section -->
+    <!-- Footer section -->
 
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="contact-section">
         <p>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
