@@ -518,7 +518,7 @@ form textarea {
   right: 10px;
   position: absolute;
   top: 41px;
-  display: none;  
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -526,10 +526,10 @@ form textarea {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;  
+    right: 0;
     background: #3c3a39;
     height: 100vh;
-    width: 100vw;    
+    width: 100vw;
     flex-direction: column;
     border: 1px solid green;
     padding: 60px 40px 40px 24px;
@@ -541,7 +541,7 @@ form textarea {
     list-style: none;
     text-decoration: none;
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -553,7 +553,7 @@ form textarea {
 
   .cross-icon-wrapper {
     position: absolute;
-    top: 35px;    
+    top: 35px;
     left: 76%;
     list-style: none;
   }
