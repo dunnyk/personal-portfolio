@@ -19,25 +19,25 @@ function displayMenu() {
   hamburgerBtn.addEventListener("click", () => {
     cross.src = "./image/cross.png";
     li.appendChild(cross);
+    navLinksWrapper.appendChild(li);
+    navLinksWrapper.style.display = "flex";
     cross.addEventListener("click", () => {
       onClickDisappear();
     });
-    navLinksWrapper.appendChild(li);
-    navLinksWrapper.style.display = "flex";
-  });
 
-  const portfolioNav = document.querySelector("#portfolio");
-  portfolioNav.addEventListener("click", (e) => {
-    onClickDisappear();
-    e.stopPropagation();
-  });
+    const portfolioNav = document.querySelector("#Work-section");
+    portfolioNav.addEventListener("click", () => {
+      onClickDisappear();
+      e.stopPropagation();
+    });
 
-  document.querySelector("#about").addEventListener("click", () => {
-    onClickDisappear();
-  });
+    document.querySelector("#about").addEventListener("click", () => {
+      onClickDisappear();
+    });
 
-  document.querySelector("#contact").addEventListener("click", () => {
-    onClickDisappear();
+    document.querySelector("#contact").addEventListener("click", () => {
+      onClickDisappear();
+    });
   });
 }
 
