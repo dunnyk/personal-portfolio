@@ -1,66 +1,12 @@
 const projects = [
     {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads',
-        cardImage: './image/card1-bg.png',
-        technologies: ['html', 'bootstrap', 'Ruby'],
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-    },
-
-    {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads',
-        cardImage: './image/card1-bg.png',
-        technologies: ['html', 'bootstrap', 'Ruby'],
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-
-    {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads no accoounts or sign-ups',
-        cardImage: './image/card1-bg.png',
-        technologies: ['html', 'bootstrap', 'Ruby'],
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-    },
-
-    {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads',
-        cardImage: './image/card1-bg.png',
-        technologies: ['html', 'bootstrap', 'Ruby'],
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-    },
-    {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads',
-        cardImage: './image/card1-bg.png',
-        technologies: ['html', 'bootstrap', 'Ruby'],
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-    },
-
-    {
-        name: 'Professional Art Printing Data',
-        description: 'A daily selection of privately personalized reads',
-        cardImage: './image/card1-bg.png',
-        technologies:'https://github.com/dunnyk/personal-portfolio',
-        liveLink: 'https://dunnyk.github.io/personal-portfolio/',
-        sourceFile: 'https://github.com/dunnyk/personal-portfolio'
-    }
-]
-
-const projects = [
-    {
       name: "Dashboard Health Care",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "1",
     },
@@ -68,10 +14,10 @@ const projects = [
       name: "Website Portfolio",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "2",
     },
@@ -79,10 +25,10 @@ const projects = [
       name: "Profesional Art Printing Data",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "3",
     },
@@ -90,10 +36,10 @@ const projects = [
       name: "Profesional Art Printing Data",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "4",
     },
@@ -101,10 +47,10 @@ const projects = [
       name: "Profesional Art Printing Data",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "5",
     },
@@ -112,10 +58,10 @@ const projects = [
       name: "Profesional Art Printing Data",
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
-      featuredImage: "url(./images/project-card-img.svg)",
-      popupImage: "./images/mobilePop-up.svg",
-      technologies: ["html", "bootstrap", "ruby"],
-      liveLink: "https://bobb-rob.github.io/portfolio-project-1/",
+      cardImage: "url(./image/background.png)",
+      popupImage: "./image/mobilePop-up.svg",
+      techStack: ["html", "bootstrap", "ruby"],
+      demo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "6",
     },
@@ -143,11 +89,11 @@ const projects = [
     };
   
     // Projects card display function
-    const cardContainer = document.querySelector(".grid-container");
-    const createProjectCard = (projName, description, imageURL, tech, projId) => {
+   
+    const createProjectCard = (projName, description, imageURL, tech, Id) => {
       const cardWrapper = createElement("div", "card-section");
       cardWrapper.style.background = `${imageURL}`;
-      cardWrapper.id = projId;
+      cardWrapper.id = Id;
   
       const projectName = createElement("h2", "Profesional");
       projectName.textContent = `${projName}`;
@@ -155,86 +101,81 @@ const projects = [
       const projectDescription = createElement("p", "paragraph");
       projectDescription.textContent = `${description}`;
   
-      const techListItem1 = createElement("li");
-      techListItem1.textContent = `${tech[0]}`;
-      const techListItem2 = createElement("li");
-      techListItem2.textContent = `${tech[1]}`;
-      const techListItem3 = createElement("li");
-      techListItem3.textContent = `${tech[2]}`;
-      const unOrderdList = createElement("ul", "tech-list");
-      unOrderdList.appendChild(techListItem1);
-      unOrderdList.appendChild(techListItem2);
-      unOrderdList.appendChild(techListItem3);
+      const listItem1 = createElement("li");
+      listItem1.textContent = `${tech[0]}`;
+      const listItem2 = createElement("li");
+      listItem2.textContent = `${tech[1]}`;
+      const listItem3 = createElement("li");
+      listItem3.textContent = `${tech[2]}`;
 
+      const unOrderdList = createElement("ul", "tech-list");
+      unOrderdList.append(listItem1,listItem2,listItem3);      
   
       const cardButton = createElement("button", "btn1");
       cardButton.type = "button";
       cardButton.textContent = "See Project";
-      listItem.appendChild(cardDescription);
-      listItem.appendChild(cardButton);
-      return listItem;
+      
+      cardWrapper.append(projectName, projectDescription, unOrderdList, cardButton);
+      console.log(cardWrapper)     
+      return cardWrapper;
     };
   
     // Project card display map
-    projects.map((project) =>
-      cardContainer.appendChild(
-        createProjectCard(
-          project.name,
+    const cardContainer = document.querySelector(".grid-container");
+    projects.map((project) => {
+     return cardContainer.appendChild(createProjectCard(project.name,
           project.description,
-          project.featuredImage,
-          project.technologies,
+          project.cardImage,
+          project.techStack,
           project.id
-        )
-      )
-    );
+        ))});
   
     // Project pop up window create function
-  //   const createPopupWindow = (projName, techStack, popupImage, description) => {
-  //     const projectModal = createElement("div", "project-modal");
-  //     const popupContainer = createElement("div", "popup-container");
-  //     popupContainer.innerHTML = `
-  //             <h2>${projName}</h2>
-  //             <ul class="tech-stack">
-  //               ${techStack.map((tech) => `<li>${tech}</li>`)}
-  //             </ul>
-  //             <div class="popup-img-p">
-  //                 <img src="${popupImage}" alt="${projName}">
+    const insertPopup = (projName, techStack, popupImage, description) => {
+      const popupModal = createElement("div", "modal");
+      const popupContainer = createElement("div", "popContainer");
+      popupContainer.innerHTML = `
+              <h2>${projName}</h2>
+              <ul class="tech-stack">
+                ${techStack.map((tech) => `<li>${tech}</li>`)}
+              </ul>
+              <div class="popup-img-p">
+                  <img src="${popupImage}" alt="${projName}">
   
-  //                 <div class="popup-btn-wrapper">
-  //                     <p>${description}</p>
+                  <div class="popup-btn-wrapper">
+                      <p>${description}</p>
                       
-  //                     <button class="btn popup-btn" type="button">
-  //                         <span>See Live</span>
-  //                         <img src="./icons/new-window-icon.svg" alt="New window icon">
-  //                     </button>
-  //                     <button class="btn popup-btn" type="button">
-  //                         <span>See Source</span>
-  //                         <img src="./icons/github-icon.svg" alt="github icon">
-  //                     </button>
-  //                 </div>
-  //             </div>
-  //         `;
-  //     projectModal.appendChild(popupContainer);
-  //     return projectModal;
-  //   };
+                      <button class="btn popup-btn" type="button">
+                          <span>See Live</span>
+                          <img src="./icons/new-window-icon.svg" alt="New window icon">
+                      </button>
+                      <button class="btn popup-btn" type="button">
+                          <span>See Source</span>
+                          <img src="./icons/github-icon.svg" alt="github icon">
+                      </button>
+                  </div>
+              </div>
+          `;
+      popupModal.appendChild(popupContainer);
+      return popupModal;
+    };
   
-  //   // elements
-  //   const hamburgerBtn = document.querySelector(".hamburger-btn"); // Hamburger
-  //   const navLinksWrapper = document.getElementById("nav-links"); // Menu link wrapper
-  //   const cardButtons = document.querySelectorAll(".btn-card"); // See project btns
-  //   const workSection = document.getElementById("recent-works"); // portfolio Work section
+    // elements
+    const hamburgerBtn = document.querySelector(".hamburger"); // Hamburger
+    const navLinksWrapper = document.querySelector(".hide-mobile"); // Menu link wrapper
+    const cardButtons = document.querySelectorAll(".btn1"); // See project btns
+   
   
-  //   return {
-  //     createElement,
-  //     createCloseIcon,
-  //     createPopupWindow,
-  //     hamburgerBtn,
-  //     navLinksWrapper,
-  //     cardContainer,
-  //     cardButtons,
-  //     workSection,
-  //   };
-  // })();
+    return {
+      createElement,
+      createCloseIcon,
+      insertPopup,
+      hamburgerBtn,
+      navLinksWrapper,
+      cardContainer,
+      cardButtons      
+    };
+  })();
   
   const executeEvent = () => {
     // Add event listener to the hamburger btn
@@ -273,15 +214,15 @@ const projects = [
     //     );
     //     const i = project[0];
     //     injectDynamicData.workSection.appendChild(
-    //       injectDynamicData.createPopupWindow(
+    //       injectDynamicData.insertPopup(
     //         i.name,
-    //         i.technologies,
+    //         i.techStack,
     //         i.popupImage,
     //         i.description
     //       )
     //     );
   
-    //     //  Lister for click on close icon in popup container
+    //     //  Listen for click on close icon in popup container
     //     injectDynamicData.createCloseIcon(document.querySelector(".popup-container"), "span");
     //     const popupCloseIcon = document.querySelector("span.close-icon-wrapper");
     //     popupCloseIcon.addEventListener("click", () => {
@@ -296,10 +237,9 @@ const projects = [
     //   });
     // });
   
-    const firstCardButton = document.querySelector(".btn-feature");
-    firstCardButton.addEventListener("click", () => {
-      window.location = "#card-container";
-    });
+    // const firstCardButton = document.querySelector(".btn-feature");
+    // firstCardButton.addEventListener("click", () => {
+    //   window.location = "#card-container";
+    // });
   };
   executeEvent();
-  

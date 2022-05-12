@@ -1,0 +1,35 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.popContainer {
+    background-color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {    
+    .popContainer {
+        margin: 15% auto;
+        width: 80%;       
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {    
+    .popContainer {
+        width: 70%;
+        margin: 5% auto;
+        height: min-content;       
+    }
+}
+
+

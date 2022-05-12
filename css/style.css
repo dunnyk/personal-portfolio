@@ -93,7 +93,7 @@ body {
 }
 
 .main-container {
-  background-image: url("image/illustration-header-mobile.png");
+  background-image: url("../image/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-position-y: 200px;
@@ -202,8 +202,8 @@ ul.work-list {
   color: #fff;
   border: none;
   width: 327px;
-  position: relative;
-  top: 20px;
+  /* position: relative;
+  top: 20px; */ 
   font-weight: bold;
 }
 
@@ -289,8 +289,10 @@ form button {
 }
 
 .card-section {
-  background-image: url("image/background.png");
-  background-repeat: no-repeat;
+  /* background: url("../image/background.png"); */
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat !important;  
 }
 
 .tech-list {
@@ -341,7 +343,7 @@ form button {
 }
 
 .about-me {
-  background-image: url("image/group.png");
+  background-image: url("../image/group.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-position-y: 350px;
@@ -513,7 +515,7 @@ form textarea {
   padding-bottom: 10px;
 }
 
-.navbar > img {
+.navbar>img {
   padding-right: 20px;
   right: 10px;
   position: absolute;
@@ -565,7 +567,7 @@ form textarea {
     overflow-x: hidden;
   }
 
-  .navbar > img {
+  .navbar>img {
     padding-right: 20px;
     right: 10px;
     position: absolute;
@@ -631,7 +633,7 @@ form textarea {
   }
 
   .main-container {
-    background-image: url("image/main-container-bg.png");
+    background-image: url("../image/main-container-bg.png");
     background-position: right top;
     height: 850px;
   }
@@ -730,14 +732,13 @@ form textarea {
   }
 
   .card-section {
-    background-image: url("image/card1-bg.png");
+    flex-direction: row;
     background-repeat: no-repeat;
   }
 
   .btn1 {
     width: 370px;
     padding: 12px 113.5px;
-    text-decoration: none;
     color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 700;
