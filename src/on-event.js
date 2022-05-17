@@ -8,7 +8,7 @@ function displayMenu() {
   const hamburgerBtn = document.querySelector('.hamburger');
   const navLinksWrapper = document.querySelector('.hide-mobile');
   const cross = insertElement('img', 'cross');
-  const li = insertElement('li', 'cross-icon-wrapper')
+  const li = insertElement('li', 'cross-icon-wrapper');
   function onClickDisappear() {
     navLinksWrapper.style.display = 'none';
     li.remove();
@@ -16,7 +16,7 @@ function displayMenu() {
   }
 
   hamburgerBtn.addEventListener('click', () => {
-    cross.src = './image/cross.png'
+    cross.src = './image/cross.png';
     li.appendChild(cross);
     navLinksWrapper.appendChild(li);
     navLinksWrapper.style.display = 'flex';
