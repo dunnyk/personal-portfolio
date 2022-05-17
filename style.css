@@ -43,7 +43,7 @@ body {
   line-height: 24px;
   color: white;
   text-decoration: none;
-  padding-top: 58px;
+  /* padding-top: 58px; */
 }
 
 .hamburger {
