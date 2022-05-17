@@ -9,7 +9,6 @@ function displayMenu() {
   const navLinksWrapper = document.querySelector('.hide-mobile');
   const cross = insertElement('img', 'cross');
   const li = insertElement('li', 'cross-icon-wrapper');
-
   function onClickDisappear() {
     navLinksWrapper.style.display = 'none';
     li.remove();
@@ -25,7 +24,7 @@ function displayMenu() {
       onClickDisappear();
     });
 
-    const portfolioNav = document.querySelector('#Work-section');
+    const portfolioNav = document.querySelector('#portfolio');
     portfolioNav.addEventListener('click', (e) => {
       onClickDisappear();
       e.stopPropagation();
