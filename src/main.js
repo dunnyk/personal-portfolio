@@ -1,67 +1,85 @@
 const projects = [
     {
       name: "Dashboard Health Care",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "1",
     },
     {
       name: "Website Portfolio",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "2",
     },
     {
       name: "Profesional Art Printing Data",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "3",
     },
     {
       name: "Profesional Art Printing Data",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "4",
     },
     {
       name: "Profesional Art Printing Data",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "5",
     },
     {
       name: "Profesional Art Printing Data",
+      popUPname: 'Multi Post Stories',
       description:
         "A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry's standard",
       cardImage: "url(./image/background.png)",
       popupImage: "./image/mobilePop-up.svg",
+      popDescription: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                       took a galley of type and scrambled it to make a type specimen book.`,
       techStack: ["html", "bootstrap", "ruby"],
-      demo: "https://bobb-rob.github.io/portfolio-project-1/",
+      liveDemo: "https://bobb-rob.github.io/portfolio-project-1/",
       sourceFile: "https://github.com/bobb-rob/portfolio-project-1",
       id: "6",
     },
@@ -87,96 +105,102 @@ const projects = [
       closeWrapper.appendChild(closeIcon);
       location.appendChild(closeWrapper);
     };
-  
-    // Projects card display function
-   
-    const createProjectCard = (projName, description, imageURL, tech, Id) => {
-      const cardWrapper = createElement("div", "card-section");
-      cardWrapper.style.background = `${imageURL}`;
-      cardWrapper.id = Id;
-  
-      const projectName = createElement("h2", "Profesional");
-      projectName.textContent = `${projName}`;
-  
-      const projectDescription = createElement("p", "paragraph");
-      projectDescription.textContent = `${description}`;
-  
-      const listItem1 = createElement("li");
-      listItem1.textContent = `${tech[0]}`;
-      const listItem2 = createElement("li");
-      listItem2.textContent = `${tech[1]}`;
-      const listItem3 = createElement("li");
-      listItem3.textContent = `${tech[2]}`;
 
-      const unOrderdList = createElement("ul", "tech-list");
-      unOrderdList.append(listItem1,listItem2,listItem3);      
-  
-      const cardButton = createElement("button", "btn1");
-      cardButton.type = "button";
-      cardButton.textContent = "See Project";
-      
-      cardWrapper.append(projectName, projectDescription, unOrderdList, cardButton);
-      console.log(cardWrapper)     
-      return cardWrapper;
+    // Projects card display function
+    const cardContainer = document.getElementById("project-section");
+    const createProjectCard = proj => {
+      const listItem = createElement('li', 'project-card');
+      listItem.style.background = `${proj.cardImage}`;
+      listItem.id = proj.id;
+
+      const projectsName = createElement('h3');
+      projectsName.textContent = `${proj.name}`;
+
+      const projectsDescription = createElement('p');
+      projectsDescription.textContent = `${proj.description}`;
+
+      const techListItem1 = createElement('li')
+      techListItem1.textContent = `${proj.techStack[0]}`;
+
+      const techListItem2 = createElement('li');
+      techListItem2.textContent = `${proj.techStack[1]}`;
+
+      const techListItem3 = createElement('li');
+      techListItem3.textContent =  `${proj.techStack[2]}`;
+
+      const techUl = createElement('ul', 'describing-tags');
+      techUl.append(techListItem1, techListItem2, techListItem3);
+
+      const cardDescription = createElement('div', 'card-description');
+      cardDescription.append(projectName, projectsDescription, techUl);
+
+      const projectButton = createElement('button', 'btn-card');
+      projectButton.classList.add('btn');
+      projectButton.type = 'button';
+      projectButton.textContent = 'See Project';
+      listItem.append(cardDescription, projectButton);
+      return listItem;
     };
-  
+
+
+
     // Project card display map
-    const cardContainer = document.querySelector(".grid-container");
-    projects.map((project) => {
-     return cardContainer.appendChild(createProjectCard(project.name,
-          project.description,
-          project.cardImage,
-          project.techStack,
-          project.id
-        ))});
-  
+
+    projects.map((project) => cardContainer.appendChild(createProjectCard(project)));
+
+
+
     // Project pop up window create function
-    const insertPopup = (projName, techStack, popupImage, description) => {
-      const popupModal = createElement("div", "modal");
+    const insertPopupWindow = (project) => {
+      const popupModal = createElement('div', 'popup-modal');
       const popupContainer = createElement("div", "popContainer");
       popupContainer.innerHTML = `
-              <h2>${projName}</h2>
-              <ul class="tech-stack">
-                ${techStack.map((tech) => `<li>${tech}</li>`)}
+              <h2>${project.popupName}</h2>
+              <ul class="techno-stack">
+                ${project.techStack.map((tech) => `<li>${tech}</li>`)}
               </ul>
               <div class="popup-img-p">
-                  <img src="${popupImage}" alt="${projName}">
-  
+                  <img src="${project.popupImage}" alt="${project.projName}">
+
                   <div class="popup-btn-wrapper">
-                      <p>${description}</p>
-                      
-                      <button class="btn popup-btn" type="button">
-                          <span>See Live</span>
-                          <img src="./icons/new-window-icon.svg" alt="New window icon">
-                      </button>
-                      <button class="btn popup-btn" type="button">
-                          <span>See Source</span>
-                          <img src="./icons/github-icon.svg" alt="github icon">
-                      </button>
+                      <p>${project.popDescription}</p>
+
+                      <div class="pop-btn-wrap">
+                        <button class="btn popup-btn" type="button">
+                          <a href="${project.liveDemo}">See Live
+                            <img src="./image/new-window-icon.svg" alt="New window icon">
+                          </a>
+                        </button>
+                        <button class="btn popup-btn" type="button">
+                          <a href="${project.sourceFile}">See Source
+                            <img src="./image/github-icon.svg" alt="github icon">
+                          </a>
+                        </button>
+                      </div>
                   </div>
               </div>
           `;
       popupModal.appendChild(popupContainer);
       return popupModal;
     };
-  
+
     // elements
     const hamburgerBtn = document.querySelector(".hamburger"); // Hamburger
     const navLinksWrapper = document.querySelector(".hide-mobile"); // Menu link wrapper
     const cardButtons = document.querySelectorAll(".btn1"); // See project btns
-   
-  
+
     return {
       createElement,
       createCloseIcon,
-      insertPopup,
+      insertPopupWindow,
       hamburgerBtn,
+      insertPopup,
       navLinksWrapper,
       cardContainer,
-      cardButtons      
+      cardButtons
     };
   })();
-  
+
   const executeEvent = () => {
     // Add event listener to the hamburger btn
     injectDynamicData.hamburgerBtn.addEventListener("click", () => {
