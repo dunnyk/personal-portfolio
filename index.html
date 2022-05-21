@@ -11,12 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./popup.css">
     <script
       src="https://kit.fontawesome.com/cc9d26c8d1.js"
       crossorigin="anonymous"
     ></script>
     <script src="src/on-event.js" defer></script>
-    <title>mobile version</title>
+    <title>Arrow Dan Project</title>
   </head>
 
   <body>
@@ -84,6 +85,8 @@
 
     <!-- WORK SECTION -->
 
+    <div class="popup-wrapper"></div>
+
     <section class="main-wrap" id="Work-section">
       <article class="work-section">
         <div class="work-title">
@@ -118,7 +121,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" id="0" class="btn popup-open-button">See Project</button>
           </div>
         </div>
       </article>
@@ -137,7 +140,8 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="1" class="btn1 popup-open-button">See Project</button>
+                    </div>
         </div>
 
         <div class="card-section">
@@ -151,7 +155,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="2"class="btn1 popup-open-button">See Project</button>
         </div>
 
         <div class="card-section">
@@ -165,7 +169,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="3" class="btn1 popup-open-button">See Project</button>
         </div>
 
         <div class="card-section">
@@ -179,7 +183,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="4"class="btn1 popup-open-button">See Project</button>
         </div>
 
         <div class="card-section">
@@ -193,7 +197,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="5" class="btn1 popup-open-button">See Project</button>
         </div>
 
         <div class="card-section">
@@ -207,7 +211,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button type="button" class="btn1">See Project</button>
+          <button type="button" id="6" class="btn1 popup-open-button">See Project</button>
         </div>
       </section>
     </section>
@@ -338,5 +342,6 @@
         alt="Shape Icon"
       />
     </footer>
+    <script src="./popup.js"></script>
   </body>
 </html>
