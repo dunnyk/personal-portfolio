@@ -6,7 +6,8 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (userEmail.value !== userEmail.value.toLowerCase()) {
     small.innerText = 'Form not sent.Please enter email in lower case';
-  } else if (userEmail.value === userEmail.value.toLowerCase()) small.innerText = '';
+  }
+  else if (userEmail.value === userEmail.value.toLowerCase()) small.innerText = '';
 });
 
 userEmail.addEventListener('click', () => {
