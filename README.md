@@ -20,7 +20,7 @@ To spin up your application, follow this  simple steps and you will be good to g
 
 ## Live Preview
 
-(My Portfolio)[https://dunnyk.github.io/personal-portfolio/]
+[My Portfolio](https://dunnyk.github.io/personal-portfolio/)
 
 ## Authors
 
