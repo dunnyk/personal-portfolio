@@ -276,11 +276,12 @@
           to chat please get in touch.
         </p>
 
-        <form action="https://formspree.io/f/mayvddjz" method="post">
+        <form id="form" action="https://formspree.io/f/myyodjdo" method="post">
           <input
             type="text"
             placeholder="Full name"
             name="Full name"
+            id="fName"
             maxlength="30"
             required
           />
@@ -288,18 +289,20 @@
             type="email"
             placeholder="Email address"
             name="email"
+            id="email"
             required
           />
           <textarea
             cols="30"
-            class="textarea"
             rows="10"
             placeholder="Enter text here"
             maxlength="500"
             required
+            id="message"
             name="Message"
           ></textarea>
-          <button class="form-button" type="submit">Get in touch</button>
+          <small></small>
+          <button type="submit">Get in touch</button>
         </form>
       </div>
       <img
